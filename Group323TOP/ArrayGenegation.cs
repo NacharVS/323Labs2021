@@ -4,7 +4,34 @@ namespace Group323TOP
 {
     class ArrayGenegation
     {
-        static void ArrayGeneration(int[] mass)
+        public static void Operation(int[] mass1, int[] mass2)
+        {
+            if(mass1.Length > mass2.Length)
+            {
+                for (int i = 0; i < mass2.Length; i++)
+                {
+                    mass1[i] = mass1[i] + mass2[i];                  
+                }
+
+                for (int i = 0; i < mass1.Length; i++)
+                {
+                    Console.Write($" {mass1[i]}");
+                }
+            }
+            else
+            {
+                for (int i = 0; i < mass1.Length; i++)
+                {
+                    mass2[i] = mass1[i] + mass2[i];             
+                }
+                for (int i = 0; i < mass2.Length; i++)
+                {
+                    Console.Write($" {mass2[i]}");
+                }
+
+            }
+        }
+        public static void ArrayGeneration(int[] mass)
         {
             Random rnd = new Random();
             for (int i = 0; i < mass.Length; i++)
@@ -12,6 +39,7 @@ namespace Group323TOP
                 mass[i] = rnd.Next(0, 2);
                 Console.Write($" {mass[i]}");
             }
+            Console.WriteLine();
         }
 
         static void ArrayGeneration(int[,] mass)

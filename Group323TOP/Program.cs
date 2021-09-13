@@ -9,6 +9,11 @@ namespace Group323TOP
         // 2. найти максимальный элемент в каждой строке матрицы
         static void Main(string[] args)
         {
+            int[] array1 = new int[10];
+            int[] array2 = new int[7];
+            ArrayGenegation.ArrayGeneration(array1);
+            ArrayGenegation.ArrayGeneration(array2);
+            ArrayGenegation.Operation(array1, array2);
             Console.WriteLine("Hello");
         }
     }
