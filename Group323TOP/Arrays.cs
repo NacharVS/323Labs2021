@@ -16,7 +16,6 @@ namespace Group323TOP
                 {
                     massive1[i] = massive1[i] * massive2[i];
                 }
-
                 for (int i = 0; i < massive1.Length; i++)
                 {
                     Console.Write($"{massive1[i]}");
@@ -32,21 +31,19 @@ namespace Group323TOP
                 {
                     Console.Write($" {massive2[i]}");
                 }
-
+                Console.WriteLine();
             }
-            Console.WriteLine("");
-        
+            
         }
         public static void ArrayGeneration(int[] massive)
         {
-            Console.WriteLine("\n");
+            Console.WriteLine();
             Random rnd = new Random();
             for (int i = 0; i < massive.Length; i++)
             {
                 massive[i] = rnd.Next(0, 4);
                 Console.Write($" {massive[i]}");
             }
-            
         }
     }
 }

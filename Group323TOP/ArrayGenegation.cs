@@ -29,7 +29,7 @@ namespace Group323TOP
                 {
                     Console.Write($" {mass2[i]}");
                 }
-
+                Console.WriteLine("\n");
             }
         }
         public static void ArrayGeneration(int[] mass)
