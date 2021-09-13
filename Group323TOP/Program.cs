@@ -14,7 +14,7 @@ namespace Group323TOP
             ArrayGenegation.ArrayGeneration(array1);
             ArrayGenegation.ArrayGeneration(array2);
             ArrayGenegation.Operation(array1, array2);
-            Console.WriteLine("Test");
+            Console.WriteLine("test");
         }
     }
 }
