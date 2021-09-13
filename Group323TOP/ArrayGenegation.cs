@@ -6,6 +6,7 @@ namespace Group323TOP
     {
         public static void Operation(int[] mass1, int[] mass2)
         {
+            Console.WriteLine("amount");
             if(mass1.Length > mass2.Length)
             {
                 for (int i = 0; i < mass2.Length; i++)

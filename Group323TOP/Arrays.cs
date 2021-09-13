@@ -6,31 +6,46 @@ namespace Group323TOP
 {
     class Arrays
     {
-        public static void Operation(int[] mass1, int[] mass2)
+        public static void Operation(int[] massive1, int[] massive2)
         {
-            if (mass1.Length > mass2.Length)
+            Console.WriteLine("\n");
+            Console.WriteLine("composition");
+            if (massive1.Length > massive2.Length)
             {
-                for (int i = 0; i < array2.Length; i++)
+                for (int i = 0; i < massive2.Length; i++)
                 {
-                    array1[i] = array1[i] * array2[i];
+                    massive1[i] = massive1[i] * massive2[i];
                 }
 
-                for (int i = 0; i < array1.Length; i++)
+                for (int i = 0; i < massive1.Length; i++)
                 {
-                    Console.Write($" {array1[i]}");
+                    Console.Write($"{massive1[i]}");
                 }
             }
             else
             {
-                for (int i = 0; i < array1.Length; i++)
+                for (int i = 0; i < massive1.Length; i++)
                 {
-                    array2[i] = array1[i] * array2[i];
+                    massive2[i] = massive1[i] * massive2[i];
                 }
-                for (int i = 0; i < array2.Length; i++)
+                for (int i = 0; i < massive2.Length; i++)
                 {
-                    Console.Write($" {array2[i]}");
+                    Console.Write($" {massive2[i]}");
                 }
+
             }
+            Console.WriteLine("");
+        
+        }
+        public static void ArrayGeneration(int[] massive)
+        {
+            Random rnd = new Random();
+            for (int i = 0; i < massive.Length; i++)
+            {
+                massive[i] = rnd.Next(0, 4);
+                Console.Write($" {massive[i]}");
+            }
+            Console.WriteLine();
         }
     }
 }
