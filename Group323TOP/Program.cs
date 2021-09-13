@@ -20,6 +20,7 @@ namespace Group323TOP
             ArrayTasks.Operation(arrayMult1, arrayMult2);
             Console.WriteLine();
             ArrayTasks.FindingMax(arrayMatrix);
+            Console.WriteLine("Test");
 
         }
     }
