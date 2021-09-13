@@ -8,7 +8,7 @@ namespace Group323TOP
     {
         public static void Operation(int[] massive1, int[] massive2)
         {
-            Console.WriteLine("\n");
+            Console.WriteLine();
             Console.WriteLine("composition");
             if (massive1.Length > massive2.Length)
             {
@@ -39,13 +39,14 @@ namespace Group323TOP
         }
         public static void ArrayGeneration(int[] massive)
         {
+            Console.WriteLine("\n");
             Random rnd = new Random();
             for (int i = 0; i < massive.Length; i++)
             {
                 massive[i] = rnd.Next(0, 4);
                 Console.Write($" {massive[i]}");
             }
-            Console.WriteLine();
+            
         }
     }
 }
