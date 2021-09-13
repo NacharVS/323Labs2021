@@ -36,7 +36,7 @@ namespace Group323TOP
             Random rnd = new Random();
             for (int i = 0; i < mass.Length; i++)
             {
-                mass[i] = rnd.Next(0, 2);
+                mass[i] = rnd.Next(0, 4);
                 Console.Write($" {mass[i]}");
             }
             Console.WriteLine();
@@ -48,7 +48,7 @@ namespace Group323TOP
             {
                 for (int j = 0; j < mass.GetLength(1); j++)
                 {
-                    mass[i, j] = new Random().Next(0, 2);
+                    mass[i, j] = new Random().Next(0, 4);
                     Console.Write($" {mass[i, j]}");
                 }
                 Console.WriteLine();
