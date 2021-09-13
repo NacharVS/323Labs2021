@@ -11,10 +11,11 @@ namespace Group323TOP
         {
             int[] array1 = new int[5];
             int[] array2 = new int[5];
-
             int[] massive1 = new int[5];
             int[] massive2 = new int[5];
-           
+            int[,] arrays1 = new int[5, 5];
+            int[,] arrays2 = new int[5, 5];
+
             ArrayGenegation.ArrayGeneration(array1);
             ArrayGenegation.ArrayGeneration(array2);
             ArrayGenegation.Operation(array1, array2);

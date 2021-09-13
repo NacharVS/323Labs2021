@@ -45,5 +45,13 @@ namespace Group323TOP
                 Console.Write($" {massive[i]}");
             }
         }
+        public static void ArrayMax(int[,] arrays)
+        {
+            Random random = new Random();
+            for (int i = 0; i < arrays.Length; i++)
+            {
+
+            }
+        }
     }
 }
