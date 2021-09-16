@@ -49,8 +49,7 @@ namespace Group323TOP
         {
             Random random = new Random();
             for (int i = 0; i < arrays.Length; i++)
-            {
-
+            { 
             }
         }
     }
