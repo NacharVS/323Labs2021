@@ -1,0 +1,10 @@
+C:\Users\231920\Desktop\323Labs2021\Event\bin\Debug\netcoreapp3.1\Event.exe
+C:\Users\231920\Desktop\323Labs2021\Event\bin\Debug\netcoreapp3.1\Event.deps.json
+C:\Users\231920\Desktop\323Labs2021\Event\bin\Debug\netcoreapp3.1\Event.runtimeconfig.json
+C:\Users\231920\Desktop\323Labs2021\Event\bin\Debug\netcoreapp3.1\Event.runtimeconfig.dev.json
+C:\Users\231920\Desktop\323Labs2021\Event\bin\Debug\netcoreapp3.1\Event.dll
+C:\Users\231920\Desktop\323Labs2021\Event\bin\Debug\netcoreapp3.1\Event.pdb
+C:\Users\231920\Desktop\323Labs2021\Event\obj\Debug\netcoreapp3.1\Event.AssemblyInfoInputs.cache
+C:\Users\231920\Desktop\323Labs2021\Event\obj\Debug\netcoreapp3.1\Event.AssemblyInfo.cs
+C:\Users\231920\Desktop\323Labs2021\Event\obj\Debug\netcoreapp3.1\Event.dll
+C:\Users\231920\Desktop\323Labs2021\Event\obj\Debug\netcoreapp3.1\Event.pdb

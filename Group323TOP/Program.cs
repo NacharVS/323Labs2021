@@ -10,7 +10,7 @@ namespace Group323TOP
         static void Main(string[] args)
         {
             int[] mas1 = new int[10];
-            for (int i = 5; i < mas1.Length; i++)
+            for (int i = 0; i < mas1.Length; i++)
             {
                 Console.WriteLine(i);
             }
