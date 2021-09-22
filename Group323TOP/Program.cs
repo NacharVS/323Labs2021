@@ -23,16 +23,16 @@ namespace Group323TOP
         {
             List<Student> students = new List<Student>();
 
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 5; i++)
             {
                 students.Add(new Student("Ivan", new Random().Next(20,30)));
             }
             List <Student> finding = new List<Student>();
             finding = students.FindAll(x => x.Age == 25);
 
-            foreach (var item in finding)
+            foreach (var item in students)
             {
-                Console.WriteLine($" {item.Name} ");
+                Console.WriteLine($" {item.Name} {item.Age} ");
             }
 
 
