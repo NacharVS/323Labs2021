@@ -1,25 +1,43 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
+using System.Xml;
 
 namespace Group323TOP
 {
+    class Student
+    {
+        public Student(string name, int age)
+        {
+            Name = name;
+            Age = age;
+        }
+
+        public string Name { get; set; }
+        public int Age { get; set; }    
+        
+    }
     class Program
     {
-        // 0. Создать метод для нахождения суммы элементов двух одномерных массивов.
-        // 1. Создать перегрузку предыдущеко метода, для нахождения произведения элементов двух одномерных массивов
-        // 2. найти максимальный элемент в каждой строке матрицы
         static void Main(string[] args)
         {
-            double[] arraySum1 = new double[] { 1.1, 2.2, 3.3, 4.4, 5.5 };
-            double[] arraySum2 = new double[] { 6.6, 7.7, 8.8 };
-            int[] arrayMult1 = new int[] { 1, 2, 3, 4, 14 };
-            int[] arrayMult2 = new int[] { 5, 6, 7 };
-            int[,] arrayMatrix = new int[5, 5];
-            ArrayTasks.SumArraysPrinting(arraySum1, arraySum2);
-            ArrayTasks.Operation(arraySum1, arraySum2);
-            ArrayTasks.MultArraysPrinting(arrayMult1, arrayMult2);
-            ArrayTasks.Operation(arrayMult1, arrayMult2);
-            Console.WriteLine();
-            ArrayTasks.FindingMax(arrayMatrix);
+            List<Student> students = new List<Student>();
+
+            for (int i = 0; i < 100; i++)
+            {
+                students.Add(new Student("Ivan", new Random().Next(20,30)));
+            }
+            List <Student> finding = new List<Student>();
+            finding = students.FindAll(x => x.Age == 25);
+
+            foreach (var item in finding)
+            {
+                Console.WriteLine($" {item.Name} ");
+            }
+
+
+
+
         }
     }
 }
