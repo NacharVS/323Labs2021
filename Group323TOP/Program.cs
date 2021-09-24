@@ -7,9 +7,17 @@ namespace Group323TOP
         // 0. Создать метод для нахождения суммы элементов двух одномерных массивов.
         // 1. Создать перегрузку предыдущеко метода, для нахождения произведения элементов двух одномерных массивов
         // 2. найти максимальный элемент в каждой строке матрицы
+       
+        delegate int Operation(int x, int y);
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
+
+            game.Start.StartPersonajii();
+            
         }
+        
     }
+
 }
+

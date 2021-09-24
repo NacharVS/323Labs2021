@@ -5,15 +5,16 @@ using System.Text;
 namespace Group323TOP
 {
     class game
-    {
+    {   public delegate void Damage();
         class Tips
         {
+            
             private int _health;
             private int _damage;
             private bool _evil;
             private bool _walking;
             private string _name;
-
+            
 
             public Tips(string name, int helth, int damage, bool evil, bool walking)
             {
@@ -29,8 +30,22 @@ namespace Group323TOP
                     Console.WriteLine('\t' + "Внимание! \n  \t Враг!" + '\n' + '\t' + "цель :" + $"{name}");
 
                 }
+                    
 
-
+            }
+            
+            public void SumDamge() 
+            {
+                        if (_damage < 50)
+                        {
+                            _damage = _damage - 10;
+                            Console.WriteLine($"Суммарный урон равен {_damage}");
+                        }
+                        else 
+                        {
+                            _damage  = _damage - 5;
+                            Console.WriteLine($"Суммарный урон равен {_damage}");
+                        }
             }
             public void Print()
             {
@@ -73,14 +88,18 @@ namespace Group323TOP
             }
 
 
-
+            public static void Shoot() 
+            {
+                Console.WriteLine("daddaadad");
+            }
 
         }
+        
 
-        class Start
+        public class Start
         {
 
-            static void StartPersonajii()
+            public static void StartPersonajii()
             {
 
                 Tips medic_mirniy = new Tips("Медик", 100, 20, evil: false, walking: true);
@@ -98,7 +117,8 @@ namespace Group323TOP
                 mechnik_vrag.Print();
                 podrivnik_vrag.Print();
                 letchik_vrag.Print();
-
+                Damage dam1 = Tips.Shoot;
+                
             }
         }
     }
