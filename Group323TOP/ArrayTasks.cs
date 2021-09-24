@@ -19,8 +19,6 @@ namespace Group323TOP
                 Console.Write(arraySum2[i] + "  ");
             }
             Console.WriteLine("\n");
-
-
         }
         public static void Operation(double[] mass1, double[] mass2)
         {
