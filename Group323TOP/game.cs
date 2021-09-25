@@ -6,9 +6,14 @@ namespace Group323TOP
 {
     class game
     {   public delegate void Damage();
+       
         class Tips
         {
-            
+
+            public delegate void ValueChangedDelegateHealth(string messagehealth);
+            public delegate void ValueChangedDelegateDamage(string messagedamage);
+
+
             private int _health;
             private int _damage;
             private bool _evil;
@@ -33,7 +38,45 @@ namespace Group323TOP
                     
 
             }
-            
+
+            public int Health
+            {
+                get => _health;
+
+                set
+                {
+                    _health = value;
+                    if (_health < 1)
+                    {
+                        HealthChangedEvent?.Invoke($" Персонаж    {_name}   погиб и имеет  {_health} здоровья ");
+                    }
+                    else
+                    {
+                        HealthChangedEvent?.Invoke($" Здоовье персонажа   {_name} =  {_health} ");
+                    }
+                }
+            }
+            public int Damagee
+            {
+                get => _damage;
+
+                set
+                {
+                    _damage = value;
+                    
+                    if (_damage < 50)
+                    {
+                        _damage = _damage + 10;
+                        DamageChangedEvent?.Invoke($" Суммарный урон равен {_name} =   {_damage}");
+                    }
+                    else
+                    {
+                        _damage = _damage + 5;
+                        DamageChangedEvent?.Invoke($" Суммарный урон равен  {_name}  = {_damage}");
+                    }
+                }
+            }
+
             public void SumDamge() 
             {
                         if (_damage < 50)
@@ -90,14 +133,36 @@ namespace Group323TOP
 
             public static void Shoot() 
             {
-                Console.WriteLine("daddaadad");
+                Console.WriteLine("--------------------------------------Проверка завершена---------------------------------------------------");
             }
+
+            public static void InflictDamage(Tips char1, int damage)
+            {
+                
+                char1.Health -= damage;
+                
+            }
+            public static void BoosterDamage(Tips char2, int damagee)
+            {
+
+                char2.Damagee += damagee;
+
+            }
+
+            public static event ValueChangedDelegateHealth HealthChangedEvent;
+            public static event ValueChangedDelegateDamage DamageChangedEvent;
 
         }
         
 
         public class Start
         {
+            static void DisplayMessage(string mes)
+            {
+               
+                    Console.WriteLine(mes);
+                
+            }
 
             public static void StartPersonajii()
             {
@@ -118,7 +183,19 @@ namespace Group323TOP
                 podrivnik_vrag.Print();
                 letchik_vrag.Print();
                 Damage dam1 = Tips.Shoot;
-                
+                Console.WriteLine();
+                Tips.HealthChangedEvent += DisplayMessage;
+                Tips.DamageChangedEvent += DisplayMessage;
+                Tips.InflictDamage(medic_mirniy, 10);
+                Console.WriteLine();
+                Tips.BoosterDamage(medic_mirniy, 50);
+                Console.WriteLine();
+                Tips.InflictDamage(letchik_vrag,100);
+                Console.WriteLine();
+                Tips.BoosterDamage(podrivnik_vrag , 70);
+                dam1();
+
+
             }
         }
     }
