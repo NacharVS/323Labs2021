@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Group323TOP
 {
-    class game
+    class game 
     {   public delegate void Damage();
        
         class Tips

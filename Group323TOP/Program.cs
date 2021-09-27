@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Threading;
 namespace Group323TOP
 {
     class Program
@@ -12,8 +12,15 @@ namespace Group323TOP
 
         static void Main(string[] args)
         {
-
-            game.Start.StartPersonajii();
+            int h = 100;
+            for (int i = 1; i < h; i--)
+            {
+                VK a = new VK();
+                a.SendMessage();
+                a.PublicNews();
+                Thread.Sleep(2000);
+            }
+            
             
         }
         
