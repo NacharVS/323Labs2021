@@ -7,6 +7,7 @@ namespace Group323TOP.INTERFACES
     interface IMessenger
     {
         void SendMessage();
-        void PublicNews();
+        void Proverka();
+        
     }
 }

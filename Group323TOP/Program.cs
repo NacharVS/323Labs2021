@@ -12,12 +12,13 @@ namespace Group323TOP
 
         static void Main(string[] args)
         {
+            game.Start.StartPersonajii();
             int h = 100;
             for (int i = 1; i < h; i--)
             {
                 VK a = new VK();
-                a.SendMessage();
-                a.PublicNews();
+               
+                a.Proverka();
                 Thread.Sleep(2000);
             }
             

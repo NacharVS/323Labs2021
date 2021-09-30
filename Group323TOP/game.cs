@@ -131,9 +131,13 @@ namespace Group323TOP
             }
 
 
-            public static void Shoot() 
+            public static void Shoot()
             {
-                Console.WriteLine("--------------------------------------Проверка завершена---------------------------------------------------");
+                Console.WriteLine();
+                Console.WriteLine(" -------------------------------------------------- ");
+                Console.WriteLine("| ↓  ↓  ↓  ↓  ↓ Состояние проверки  ↓  ↓  ↓  ↓  ↓ |");
+                Console.WriteLine(" -------------------------------------------------- ");
+                Console.WriteLine();
             }
 
             public static void InflictDamage(Tips char1, int damage)

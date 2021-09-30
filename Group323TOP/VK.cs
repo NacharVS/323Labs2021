@@ -4,17 +4,14 @@ using System.Text;
 
 namespace Group323TOP
 {
-    class VK :game ,INTERFACES.IMessenger 
+    class VK :game
     {
 
-        public void PublicNews()
+        public void Proverka()
         {
-            Console.WriteLine("abc");
+            Console.WriteLine("Проверка успешно завершена");
         }
 
-        public void SendMessage()
-        {
-            Console.WriteLine("Daler sps");
-        }
+        
     }
 }
