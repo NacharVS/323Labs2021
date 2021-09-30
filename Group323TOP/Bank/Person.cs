@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Group323TOP.Bank
 {
-    class Person
+    struct Person
     {
         private string _name;
         private string _passport;
