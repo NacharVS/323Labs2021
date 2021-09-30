@@ -22,7 +22,7 @@ namespace Group323TOP
             Arrays.ArrayGeneration(massive1);
             Arrays.ArrayGeneration(massive2);
             Arrays.Operation(massive1, massive2);
-            Console.WriteLine();
+           
          
 
 
