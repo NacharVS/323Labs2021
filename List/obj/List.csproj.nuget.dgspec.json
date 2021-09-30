@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\231920\\Desktop\\323Labs2021\\List\\List.csproj": {}
+    "C:\\Users\\lesha\\OneDrive\\323Labs2021\\List\\List.csproj": {}
   },
   "projects": {
-    "C:\\Users\\231920\\Desktop\\323Labs2021\\List\\List.csproj": {
+    "C:\\Users\\lesha\\OneDrive\\323Labs2021\\List\\List.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\231920\\Desktop\\323Labs2021\\List\\List.csproj",
+        "projectUniqueName": "C:\\Users\\lesha\\OneDrive\\323Labs2021\\List\\List.csproj",
         "projectName": "List",
-        "projectPath": "C:\\Users\\231920\\Desktop\\323Labs2021\\List\\List.csproj",
-        "packagesPath": "C:\\Users\\231920\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\231920\\Desktop\\323Labs2021\\List\\obj\\",
+        "projectPath": "C:\\Users\\lesha\\OneDrive\\323Labs2021\\List\\List.csproj",
+        "packagesPath": "C:\\Users\\lesha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lesha\\OneDrive\\323Labs2021\\List\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\231920\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\lesha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -30,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -41,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -56,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

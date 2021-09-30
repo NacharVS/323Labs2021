@@ -37,15 +37,22 @@ namespace Bank_Account
             }
         }
 
+        private static void DisplayMessage(string message)
+        {
+            Console.WriteLine(message);
+        } 
+
         static void Main(string[] args)
         {
             Account acc = new Account(100);
+            acc.Notify += DisplayMessage; // Добавляем обработчик для события Notify
             acc.Put(20);
             Console.WriteLine($"Сумма на счету: {acc.Sum}");
             acc.Take(70);
             Console.WriteLine($"Сумма на счету: {acc.Sum}");
             acc.Take(180);
             Console.WriteLine($"Сумма на счету: {acc.Sum}");
+            Console.Read();
         }
     }
 }
