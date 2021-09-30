@@ -11,7 +11,7 @@ namespace Group323TOP
         static void Main(string[] args)
         {
             IUnit newUnit = new Warrior(1000, "Semen");
-            IDamage inflictDamage = new Warrior(1000, "Panteleymon");
+            IDamage inflictDamage = new Warrior(1000, "Pa123eleymon");
             newUnit.Message();
             inflictDamage.InflictDamage(200);
             
