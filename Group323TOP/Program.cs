@@ -9,7 +9,7 @@ namespace Group323TOP
         // 2. найти максимальный элемент в каждой строке матрицы
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
+            PersonalList.StartMenu();
         }
     }
 }

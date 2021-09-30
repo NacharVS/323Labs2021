@@ -18,12 +18,12 @@ namespace Group323TOP
             {
                 Console.WriteLine($"{item.LastName} {item.Name} {item.Age} {item.AccountNumber}");
             }
-
+            //List<PersonalData> person
         }
 
-        public static void AddPerson(List<PersonalData> person)
+        public static void AddPerson()
         {
-
+            List<PersonalData> person = new List<PersonalData>();
             Console.WriteLine("Введите фамилию чела: ");
             string lastname = Convert.ToString(Console.ReadLine());
             Console.WriteLine("Введите имя чела: ");
@@ -36,11 +36,12 @@ namespace Group323TOP
             Console.WriteLine();
         }
 
-        public static void RemovePerson(List<PersonalData> person)
+        public static void RemovePerson()
         {
+            List<PersonalData> person = new List<PersonalData>();
             Console.Write("Введите номер удаляемого чела: ");
             int del = Convert.ToInt32(Console.ReadLine());
-            person.RemoveAt(del - 1);
+            person.RemoveAt(del);
         }
         public static void StartMenu()
         {
