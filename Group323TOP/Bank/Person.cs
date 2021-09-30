@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Group323TOP.Bank
+namespace Group323TOP
 {
     struct Person
     {

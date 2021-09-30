@@ -68,4 +68,5 @@ namespace Group323TOP
             Person newPerson = new Person(id, name, passport, balance);
             users.Add(newPerson);
         }
+    }
 }
