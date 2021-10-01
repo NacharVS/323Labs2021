@@ -7,7 +7,7 @@ namespace Group323TOP
     class PersonalList
     {
 
-            static List<PersonalData> person = new List<PersonalData>();
+        static List<PersonalData> person = new List<PersonalData>();
         public static void StartList()
         {
             person.Add(new PersonalData("Габдуллтити", "Марсесь", 15, 2288));
@@ -44,23 +44,32 @@ namespace Group323TOP
         }
         public static void StartMenu()
         {
-                Console.WriteLine("Чтобы посмотреть список, жмякайте 1 \nЧтобы добавить челика в список, жмякайте 2 \nЧтобы удалить челика из списка, жмякайте 3");
-                int tap = Convert.ToInt32(Console.ReadLine());
-                switch (tap)
-                {
-                    case 1:
-                        StartList();
-                        break;
-                    case 2:
-                        AddPerson();
-                        break;
-                    case 3:
-                        RemovePerson();
-                        break;
+            Console.WriteLine("Чтобы посмотреть список, жмякайте 1 \nЧтобы добавить челика в список, жмякайте 2 \nЧтобы удалить челика из списка, жмякайте 3");
+            int tap = Convert.ToInt32(Console.ReadLine());
+            switch (tap)
+            {
+                case 1:
+                    StartList();
+                    break;
+                case 2:
+                    AddPerson();
+                    Console.WriteLine();
+                    foreach (var item in person)
+                    {
+                        Console.WriteLine($"{item.LastName} {item.Name} {item.Age} {item.AccountNumber}");
+                    }
+                    break;
+                case 3:
+                    RemovePerson();
+                    Console.WriteLine();
+                    foreach (var item in person)
+                    {
+                        Console.WriteLine($"{item.LastName} {item.Name} {item.Age} {item.AccountNumber}");
+                    }
+                    break;
 
-                }
             }
-
         }
-    }
 
+    }
+}
