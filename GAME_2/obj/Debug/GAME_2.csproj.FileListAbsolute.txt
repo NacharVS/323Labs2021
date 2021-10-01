@@ -1,0 +1,11 @@
+C:\Users\231920\Desktop\323Labs2021\GAME_2\bin\Debug\GAME_2.exe.config
+C:\Users\231920\Desktop\323Labs2021\GAME_2\bin\Debug\GAME_2.exe
+C:\Users\231920\Desktop\323Labs2021\GAME_2\bin\Debug\GAME_2.pdb
+C:\Users\231920\Desktop\323Labs2021\GAME_2\obj\Debug\GAME_2.csprojAssemblyReference.cache
+C:\Users\231920\Desktop\323Labs2021\GAME_2\obj\Debug\GAME_2.Form1.resources
+C:\Users\231920\Desktop\323Labs2021\GAME_2\obj\Debug\GAME_2.Properties.Resources.resources
+C:\Users\231920\Desktop\323Labs2021\GAME_2\obj\Debug\GAME_2.csproj.GenerateResource.cache
+C:\Users\231920\Desktop\323Labs2021\GAME_2\obj\Debug\GAME_2.exe
+C:\Users\231920\Desktop\323Labs2021\GAME_2\obj\Debug\GAME_2.pdb
+C:\Users\231920\Desktop\323Labs2021\GAME_2\obj\Debug\GAME_2.Form2.resources
+C:\Users\231920\Desktop\323Labs2021\GAME_2\obj\Debug\GAME_2.Form3.resources
