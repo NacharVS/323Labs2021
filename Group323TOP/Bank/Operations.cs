@@ -63,7 +63,5 @@ namespace Bank1
             else
                 Console.WriteLine("You can`t deposit if you have 0$ or less");
         }
-
-
     }
 }

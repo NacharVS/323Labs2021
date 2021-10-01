@@ -39,6 +39,7 @@ namespace Bank1
                         break;
                     case 4:
                         flag = false;
+                        Console.Clear();
                         break;
                 }
             }
