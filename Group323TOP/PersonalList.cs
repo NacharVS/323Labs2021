@@ -6,9 +6,10 @@ namespace Group323TOP
 {
     class PersonalList
     {
+
+            static List<PersonalData> person = new List<PersonalData>();
         public static void StartList()
         {
-            List<PersonalData> person = new List<PersonalData>();
             person.Add(new PersonalData("Габдуллтити", "Марсесь", 15, 2288));
             person.Add(new PersonalData("Петраксим", "Скам", 24, 3222));
             person.Add(new PersonalData("Рыбочкин", "Пиво", 17, 1337));
@@ -18,9 +19,8 @@ namespace Group323TOP
             {
                 Console.WriteLine($"{item.LastName} {item.Name} {item.Age} {item.AccountNumber}");
             }
-            //List<PersonalData> person
-        }
 
+        }
         public static void AddPerson()
         {
             List<PersonalData> person = new List<PersonalData>();
@@ -38,29 +38,29 @@ namespace Group323TOP
 
         public static void RemovePerson()
         {
-            List<PersonalData> person = new List<PersonalData>();
             Console.Write("Введите номер удаляемого чела: ");
             int del = Convert.ToInt32(Console.ReadLine());
-            person.RemoveAt(del);
+            person.RemoveAt(del - 1);
         }
         public static void StartMenu()
         {
-            Console.WriteLine("Чтобы посмотреть список, жмякайте 1 \nЧтобы добавить челика в список, жмякайте 2 \nЧтобы удалить челика из списка, жмякайте 3");
-            int tap = Convert.ToInt32(Console.ReadLine());
-            switch (tap)
-            {
-                case 1:
-                    StartList();
-                    break;
-                case 2:
-                    AddPerson();
-                    break;
-                case 3:
-                    RemovePerson();
-                    break;
+                Console.WriteLine("Чтобы посмотреть список, жмякайте 1 \nЧтобы добавить челика в список, жмякайте 2 \nЧтобы удалить челика из списка, жмякайте 3");
+                int tap = Convert.ToInt32(Console.ReadLine());
+                switch (tap)
+                {
+                    case 1:
+                        StartList();
+                        break;
+                    case 2:
+                        AddPerson();
+                        break;
+                    case 3:
+                        RemovePerson();
+                        break;
 
+                }
             }
 
         }
     }
-}
+
