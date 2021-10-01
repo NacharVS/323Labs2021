@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "List", "List\List.csproj", "{1AC2E35A-9ECA-4195-83CE-62A0B56C0C09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "List", "List\List.csproj", "{1AC2E35A-9ECA-4195-83CE-62A0B56C0C09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Event", "Event\Event.csproj", "{106FCDDD-858C-492E-A425-FF01A29DE4A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Event", "Event\Event.csproj", "{106FCDDD-858C-492E-A425-FF01A29DE4A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GAME_2", "GAME_2\GAME_2.csproj", "{696A7D97-31C9-44ED-8C1A-85F17A1D9E9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{106FCDDD-858C-492E-A425-FF01A29DE4A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{106FCDDD-858C-492E-A425-FF01A29DE4A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{106FCDDD-858C-492E-A425-FF01A29DE4A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{696A7D97-31C9-44ED-8C1A-85F17A1D9E9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{696A7D97-31C9-44ED-8C1A-85F17A1D9E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{696A7D97-31C9-44ED-8C1A-85F17A1D9E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{696A7D97-31C9-44ED-8C1A-85F17A1D9E9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
