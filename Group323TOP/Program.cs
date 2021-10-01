@@ -36,7 +36,13 @@ namespace Group323TOP
 
             db.StartMenu();
 
+            //GrenadierTalib Akhmed = new GrenadierTalib(100, "Akhmed", 20);
 
+            //Soldier Artem = new Soldier(100, "Артемка", 40);
+
+
+            //Akhmed.Shoot(Artem, Akhmed);
+            //Console.WriteLine(Artem.Health);
 
         }
     }
