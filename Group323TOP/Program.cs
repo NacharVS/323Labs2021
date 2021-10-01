@@ -22,6 +22,8 @@ namespace Group323TOP
             //Arrays.ArrayGeneration(massive1);
             //Arrays.ArrayGeneration(massive2);
             //Arrays.Operation(massive1, massive2);
+
+
             Balance balance1 = new Balance(2000);
             Balance balance2 = new Balance(1337);
             Balance balance3 = new Balance(228);
