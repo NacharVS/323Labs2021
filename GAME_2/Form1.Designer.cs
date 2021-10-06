@@ -48,7 +48,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(176, 48);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Не создавать класс";
+            this.button2.Text = "Информация";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
