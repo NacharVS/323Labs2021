@@ -10,12 +10,15 @@ namespace Group323TOP
     {
         static void Main(string[] args)
         {
-            IUnit newUnit = new Warrior(1000, "Semen");
-            IDamage inflictDamage = new Warrior(1000, "Panteleymon");
-            newUnit.Message();
-            inflictDamage.InflictDamage(200);
-            
-            
+            //Unit unit1 = new Unit("Vasyan", 15);
+            //unit1.AddItem(new Item("Palka", 2));
+            //unit1.AddItem(new Item("Kamen", 3));
+            //unit1.AddItem(new Item("Gulag", 9999999));
+            //Unit.AddToDb(unit1);
+            Unit.FindFromDatabase();
+
+
+
         }
     }
 }
