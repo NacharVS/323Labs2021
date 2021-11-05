@@ -10,12 +10,10 @@ namespace Group323TOP
     {
         static void Main(string[] args)
         {
-            //Unit unit1 = new Unit("Vasyan", 15);
-            //unit1.AddItem(new Item("Palka", 2));
-            //unit1.AddItem(new Item("Kamen", 3));
-            //unit1.AddItem(new Item("Gulag", 9999999));
-            //Unit.AddToDb(unit1);
-            Unit.FindFromDatabase();
+            MongoExamples.Person person = new MongoExamples.Person("Georgiy", 19, 321);
+            MongoExamples.Person.UpdateFirst(person);
+
+
 
 
 
