@@ -4,8 +4,10 @@ using System.Text;
 
 namespace Group323TOP.Interfaces
 {
-    interface IDamage
+    interface IReloadable
     {
-        void InflictDamage(int damage);
+        public int Clip { get; set; }
+
+        void Reload();
     }
 }

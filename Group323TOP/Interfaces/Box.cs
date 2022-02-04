@@ -4,8 +4,8 @@ using System.Text;
 
 namespace Group323TOP.Interfaces
 {
-    interface IUnit
+    class Box
     {
-        void Message();
+      public IWeapon[] box = new IWeapon[3] { new Glock(), new Machinegun(), new Shotgun()};
     }
 }

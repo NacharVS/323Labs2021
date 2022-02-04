@@ -10,8 +10,16 @@ namespace Group323TOP
     {
         static void Main(string[] args)
         {
-            MongoExamples.Person person = new MongoExamples.Person("Georgiy", 19, 321);
-            MongoExamples.Person.UpdateFirst(person);
+            Gunslinger Bekmansurov = new Gunslinger();
+            Mechanic Galyaviev = new Mechanic();
+            Glock weapon1 = new Glock();
+            var mleeWeapon = new Knife();
+            Shotgun weapon2 = new Shotgun();
+            Machinegun weapon3 = new Machinegun();
+            Bekmansurov.OpenFire(weapon1);
+            //Bekmansurov.Reload(mleeWeapon);
+            Galyaviev.Repair(weapon2);
+            
 
 
 
