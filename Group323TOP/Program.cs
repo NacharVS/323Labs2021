@@ -1,4 +1,7 @@
 ﻿using System;
+using Group323TOP.interfaces;
+using System.Xml;
+using System.Collections.Generic;
 
 namespace Group323TOP
 {
@@ -6,6 +9,8 @@ namespace Group323TOP
     {
         static void Main(string[] args)
         {
+            Gunslinger Andrey = new Gunslinger();
+            Mechanic Vitalya = new Mechanic();
 
         }
     }
