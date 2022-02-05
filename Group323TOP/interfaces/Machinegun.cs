@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Group323TOP.interfaces
 {
-    internal class Shotgun : IWeapon, IReloadable
+    internal class Machinegun : IReloadable, IWeapon
     {
         public int Clip { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
