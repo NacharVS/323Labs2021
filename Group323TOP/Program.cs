@@ -11,7 +11,18 @@ namespace Group323TOP
         {
             Gunslinger Andrey = new Gunslinger();
             Mechanic Vitalya = new Mechanic();
-
+            Glock glock = new Glock();
+            Knife knife = new Knife();
+            Machinegun machinegun = new Machinegun();
+            Shotgun shotgun = new Shotgun();
+            Rifle rifle = new Rifle();
+            var mleeWeapon = new Knife();
+            Box box = new Box();
+            Andrey.OpenFire(glock);
+            Vitalya.Repair(glock);
+            Andrey.OpenFire(knife);
+            Vitalya.Repair(knife);
+            
         }
     }
 }

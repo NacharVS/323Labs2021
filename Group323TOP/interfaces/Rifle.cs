@@ -4,15 +4,15 @@ using System.Text;
 
 namespace Group323TOP.interfaces
 {
-    internal class Machinegun : IReloadable, IWeapon
+    internal class Rifle : IWeapon, IReloadable
     {
-        public int Clip { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int Damage => 100;
 
-        public int Damage => 50;
+        public int Clip { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public void Attack()
         {
-            Console.WriteLine($"{GetType().Name} makes bum-bum-bum with {Damage}");
+            Console.WriteLine($"{GetType().Name} makes puw-chick with {Damage}");
         }
 
         public void Reload()
