@@ -9,6 +9,7 @@ namespace Group323TOP
         // 2. найти максимальный элемент в каждой строке матрицы
         static void Main(string[] args)
         {
+<<<<<<< Updated upstream
             //int[] array1 = new int[5];
             //int[] array2 = new int[5];
             //int[] massive1 = new int[5];
@@ -46,6 +47,17 @@ namespace Group323TOP
             //Akhmed.Shoot(Artem, Akhmed);
             //Console.WriteLine(Artem.Health);
 
+=======
+            Gunslinger Bekmansurov = new Gunslinger();
+            Mechanic Galyaviev = new Mechanic();
+            Glock weapon1 = new Glock();
+            var mleeWeapon = new Knife();
+            Shotgun weapon2 = new Shotgun();
+            Machinegun weapon3 = new Machinegun();
+            Bekmansurov.OpenFire(weapon1);
+            
+            Galyaviev.Repair(weapon2);
+>>>>>>> Stashed changes
         }
     }
 }
