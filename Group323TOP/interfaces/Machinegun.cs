@@ -10,10 +10,13 @@ namespace Group323TOP.interfaces
 
         public int Damage => 50;
 
+       
         public void Attack()
         {
             Console.WriteLine($"{GetType().Name} makes bum-bum-bum with {Damage}");
         }
+
+       
 
         public void Reload()
         {

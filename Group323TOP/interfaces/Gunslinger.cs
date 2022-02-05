@@ -9,10 +9,23 @@ namespace Group323TOP.interfaces
         public void OpenFire(IWeapon weapon)
         {
             weapon.Attack();
+           
+            
         }
         public void Reload(IReloadable reloadable)
         {
             reloadable.Reload();
         }
+        public void Cartrigee(ICartridges cartridges)
+        {
+       
+            cartridges.Cartrige();
+            
+        }
+
+
+
+
+
     }
 }

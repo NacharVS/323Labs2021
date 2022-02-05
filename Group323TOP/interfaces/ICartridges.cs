@@ -4,8 +4,9 @@ using System.Text;
 
 namespace Group323TOP.interfaces
 {
-    internal interface IRepairible 
+    internal interface ICartridges
     {
-        void Repair();
+        int Value { get;}
+        void Cartrige();
     }
 }

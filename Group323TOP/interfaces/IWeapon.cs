@@ -8,5 +8,6 @@ namespace Group323TOP.interfaces
     {
         int Damage { get; }
         void Attack();
+       
     }
 }

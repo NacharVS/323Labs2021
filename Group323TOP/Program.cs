@@ -18,11 +18,15 @@ namespace Group323TOP
             Rifle rifle = new Rifle();
             var mleeWeapon = new Knife();
             Box box = new Box();
-            Andrey.OpenFire(glock);
-            Vitalya.Repair(glock);
-            Andrey.OpenFire(knife);
-            Vitalya.Repair(knife);
+
             
+           
+            Andrey.OpenFire(rifle);
+            Andrey.Cartrigee(rifle);
+            //Vitalya.Repair(glock);
+            //Andrey.OpenFire(knife);
+            // Vitalya.Repair(knife);
+
         }
     }
 }
