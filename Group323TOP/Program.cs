@@ -16,7 +16,8 @@ namespace Group323TOP
             var mleeWeapon = new Knife();
             Shotgun weapon2 = new Shotgun();
             Machinegun weapon3 = new Machinegun();
-            Bekmansurov.OpenFire(weapon1);
+            Knife mleeWEapon = new Knife();
+            Bekmansurov.ThrowMlee(mleeWEapon);
             //Bekmansurov.Reload(mleeWeapon);
             Galyaviev.Repair(weapon2);
             

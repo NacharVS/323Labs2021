@@ -4,8 +4,10 @@ using System.Text;
 
 namespace Group323TOP.Interfaces
 {
-    class Box
+    interface IMleeWeapon : IRepairible
     {
-      //public IMleeWeapon[] box = new IMleeWeapon[3] { new Glock(), new Machinegun(), new Shotgun()};
+        int MleeDamage { get;}
+
+        void MleeAttack();
     }
 }

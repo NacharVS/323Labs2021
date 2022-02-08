@@ -15,5 +15,15 @@ namespace Group323TOP.Interfaces
         {
             weapon.Reload();
         }
+
+        public void MleeAttack(IMleeWeapon weapon)
+        {
+            weapon.MleeAttack();
+        }
+
+        public void ThrowMlee(IThrowable weapon)
+        {
+            weapon.Throw();
+        }
     }
 }

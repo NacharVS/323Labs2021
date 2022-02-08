@@ -4,8 +4,8 @@ using System.Text;
 
 namespace Group323TOP.Interfaces
 {
-    class Box
+    interface IThrowable
     {
-      //public IMleeWeapon[] box = new IMleeWeapon[3] { new Glock(), new Machinegun(), new Shotgun()};
+        void Throw();
     }
 }

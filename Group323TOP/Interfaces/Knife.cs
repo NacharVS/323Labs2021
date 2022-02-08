@@ -4,18 +4,23 @@ using System.Text;
 
 namespace Group323TOP.Interfaces
 {
-    class Knife : IWeapon
+    class Knife : IMleeWeapon, IThrowable
     {
-        public int Damage => 90;
-
-        public void Attack()
+      
+        public int MleeDamage { get => 90; }
+        public void MleeAttack()
         {
-            Console.WriteLine($"{GetType().Name} makes chik-chikchirick with {Damage}");
+            Console.WriteLine($"{GetType().Name} makes chick-chirick with {MleeDamage }");
         }
 
         public void Repair()
         {
             Console.WriteLine($"{GetType().Name} has been repaired");
+        }
+
+        public void Throw()
+        {
+            Console.WriteLine($"{GetType().Name} makes kchau with {MleeDamage*2}");
         }
     }
 }
