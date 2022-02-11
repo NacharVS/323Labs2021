@@ -4,16 +4,42 @@ using System.Text;
 
 namespace Group323TOP.Interfaces
 {
-    class Glock : IWeapon, IReloadable
+    class Glock : Weapon, IWeapon, IReloadable
     {
-        public int Damage => 8;
+        public Glock(int clip, int damage, int maxClip)
+        {
+            _clip = clip;
+            _damage = damage;
+            _maxClip = maxClip;
+            
+        }
 
-        public int Clip { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int Clip 
+        {   get => _clip;
+            set
+            {
+                if(value > _maxClip)
+                {
+                    _clip = _maxClip;
+                }
+                else
+                    _clip = value; 
+            }
+        }
+        public int Damage { get => _damage; set => _damage = value; }
 
-        public int a;
+ 
         public void Attack()
         {
-            Console.WriteLine($"{GetType().Name} makes tr-tr-tr with {Damage}");
+            if(Clip > 0)
+            {
+                Console.WriteLine($"{GetType().Name} makes tr-tr-tr with {Damage}");
+                Clip--;
+            }
+            else
+            {
+                Console.WriteLine("Need reloading");
+            }          
         }
 
         public void Repair()

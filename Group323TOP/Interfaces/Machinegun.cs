@@ -9,6 +9,7 @@ namespace Group323TOP.Interfaces
         public int Damage => 20;
 
         public int Clip { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        int IWeapon.Damage { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public void Attack()
         {

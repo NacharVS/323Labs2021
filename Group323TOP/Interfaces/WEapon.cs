@@ -4,9 +4,10 @@ using System.Text;
 
 namespace Group323TOP.Interfaces
 {
-    interface IWeapon : IRepairible
+    abstract class Weapon
     {
-        int Damage { get; set; }
-        void Attack();
+        internal int _clip;
+        internal int _maxClip;
+        internal int _damage;
     }
 }

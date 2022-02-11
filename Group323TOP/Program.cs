@@ -12,15 +12,13 @@ namespace Group323TOP
         {
             Gunslinger Bekmansurov = new Gunslinger();
             Mechanic Galyaviev = new Mechanic();
-            Glock weapon1 = new Glock();
-            var mleeWeapon = new Knife();
-            Shotgun weapon2 = new Shotgun();
-            Machinegun weapon3 = new Machinegun();
-            Knife mleeWEapon = new Knife();
-            Bekmansurov.ThrowMlee(mleeWEapon);
-            //Bekmansurov.Reload(mleeWeapon);
-            Galyaviev.Repair(weapon2);
-            
+            Glock weapon1 = new Glock(3, 20, 20);
+            weapon1.Attack();
+            weapon1.Attack();
+            weapon1.Attack();
+            weapon1.Attack();
+
+
 
 
 
